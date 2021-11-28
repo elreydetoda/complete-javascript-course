@@ -121,3 +121,5 @@ lines");
 console.log(`String
 multiple
 lines`);
+
+const description = `Portugal is in Europe, and its 11 million people speak portuguese`;
