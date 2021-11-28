@@ -149,25 +149,10 @@ const countryz = "US";
 // data 1
 // *************************
 
-const markWeight = 78;
-const markHeight = 1.69;
-const johnWeight = 92;
-const johnHeight = 1.95;
-
-const markBMI = markWeight / markHeight ** 2;
-const johnBMI = johnWeight / johnHeight ** 2;
-const markHigherBMI = markBMI > johnBMI;
-
-console.log(markBMI, johnBMI, markHigherBMI);
-
-// *************************
-// data 2
-// *************************
-
-// const markWeight = 95;
-// const markHeight = 1.88;
-// const johnWeight = 85;
-// const johnHeight = 1.76;
+// const markWeight = 78;
+// const markHeight = 1.69;
+// const johnWeight = 92;
+// const johnHeight = 1.95;
 
 // const markBMI = markWeight / markHeight ** 2;
 // const johnBMI = johnWeight / johnHeight ** 2;
@@ -175,20 +160,48 @@ console.log(markBMI, johnBMI, markHigherBMI);
 
 // console.log(markBMI, johnBMI, markHigherBMI);
 
-let whoIsHigher, notHigher, whoIsHigherBMI;
+// // *************************
+// // data 2
+// // *************************
 
-if (markBMI > johnBMI) {
-  whoIsHigher = "Mark";
-  whoIsHigherBMI = markBMI;
-  notHigher = "John";
-  notHigherBMI = johnBMI;
-} else {
-  whoIsHigher = "John";
-  whoIsHigherBMI = johnBMI;
-  notHigher = "Mark";
-  notHigherBMI = markBMI;
-}
+// // const markWeight = 95;
+// // const markHeight = 1.88;
+// // const johnWeight = 85;
+// // const johnHeight = 1.76;
 
-console.log(
-  `${whoIsHigher}'s BMI (${whoIsHigherBMI})is higher than ${notHigher}'s (${notHigherBMI})`
-);
+// // const markBMI = markWeight / markHeight ** 2;
+// // const johnBMI = johnWeight / johnHeight ** 2;
+// // const markHigherBMI = markBMI > johnBMI;
+
+// // console.log(markBMI, johnBMI, markHigherBMI);
+
+// let whoIsHigher, notHigher, whoIsHigherBMI;
+
+// if (markBMI > johnBMI) {
+//   whoIsHigher = "Mark";
+//   whoIsHigherBMI = markBMI;
+//   notHigher = "John";
+//   notHigherBMI = johnBMI;
+// } else {
+//   whoIsHigher = "John";
+//   whoIsHigherBMI = johnBMI;
+//   notHigher = "Mark";
+//   notHigherBMI = markBMI;
+// }
+
+// console.log(
+//   `${whoIsHigher}'s BMI (${whoIsHigherBMI})is higher than ${notHigher}'s (${notHigherBMI})`
+// );
+
+// type conversion
+const inputYear = "1991";
+console.log(Number(inputYear) + 18);
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+// type coercion
+console.log("I am " + 23 + " years old");
+console.log("23" - "10" - 3);
+console.log(2 + 3 + 4 + "5");
+console.log("10" - "4" - "3" - 2 + "5");
