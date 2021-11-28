@@ -67,3 +67,42 @@ const description =
 let z, y;
 z = y = 25 - 10 - 5;
 console.log(x, y);
+
+// Coding challenge 1
+// *************************
+// data 1
+// *************************
+
+const markWeightD1 = 78;
+const markHeightD1 = 1.69;
+const johnWeightD1 = 92;
+const johnHeightD1 = 1.95;
+
+let markBMID1, johnBMID1;
+
+markBMID1 = markWeightD1 / markHeightD1 ** 2;
+johnBMID1 = johnWeightD1 / johnHeightD1 ** 2;
+
+console.log(markBMID1, johnBMID1);
+
+markHigherBMID1 = markBMID1 > johnBMID1;
+console.log(markHigherBMID1);
+
+// *************************
+// data 2
+// *************************
+
+const markWeightD2 = 95;
+const markHeightD2 = 1.88;
+const johnWeightD2 = 85;
+const johnHeightD2 = 1.76;
+
+let markBMID2, johnBMID2;
+
+markBMID2 = markWeightD2 / markHeightD2 ** 2;
+johnBMID2 = johnWeightD2 / johnHeightD2 ** 2;
+
+console.log(markBMID2, johnBMID2);
+
+markHigherBMID2 = markBMID2 > johnBMID2;
+console.log(markHigherBMID2);
