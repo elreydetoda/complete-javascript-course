@@ -6,7 +6,7 @@ console.log(js$);
 
 let country = "US";
 let continent = "North America";
-let population = 99999999999999999999;
+let population = 99999999999999999999n;
 console.log(country);
 console.log(continent);
 console.log(population);
