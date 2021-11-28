@@ -92,3 +92,4 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 ** brought with ES6
 ** quite a lot of developers use `` for every string, so they don't have to think about which quotes to use
 ** used for multiline strings
+* if else = control structure

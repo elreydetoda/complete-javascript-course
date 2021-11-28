@@ -99,27 +99,47 @@ const countryz = "US";
 
 // console.log(markBMID2, johnBMID2, markHigherBMID2);
 
-const fName = "jonas";
-const job = "teacher";
-const bYear = 1991;
-const year = 2037;
+// const fName = "jonas";
+// const job = "teacher";
+// const bYear = 1991;
+// const year = 2037;
 
-const jonas =
-  "I'm " + fName + ", a " + (year - bYear) + " years old " + job + "!";
+// const jonas =
+//   "I'm " + fName + ", a " + (year - bYear) + " years old " + job + "!";
 
-console.log(jonas);
+// console.log(jonas);
 
-const jonasNew = `I'm ${fName}, a ${year - bYear} years old ${job}!`;
-console.log(jonasNew);
+// const jonasNew = `I'm ${fName}, a ${year - bYear} years old ${job}!`;
+// console.log(jonasNew);
 
-// old way for multi-line string
-console.log("String with \n\
-muliple \n\
-lines");
+// // old way for multi-line string
+// console.log("String with \n\
+// muliple \n\
+// lines");
 
-// new way
-console.log(`String
-multiple
-lines`);
+// // new way
+// console.log(`String
+// multiple
+// lines`);
 
-const description = `Portugal is in Europe, and its 11 million people speak portuguese`;
+// const description = `Portugal is in Europe, and its 11 million people speak portuguese`;
+
+// const age = 19;
+const age = 15;
+
+// if (isOldEnough) {
+if (age >= 18) {
+  console.log("Sara can start driving license 🚗");
+} else {
+  console.log(`Sara is too young wait another ${18 - age} years :)`);
+}
+
+// const birthYear = 1991;
+const birthYear = 2012;
+let century;
+if (birthYear <= 2000) {
+  century = 20;
+} else {
+  century = 21;
+}
+console.log(century);
