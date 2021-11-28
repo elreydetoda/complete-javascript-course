@@ -177,7 +177,7 @@ console.log(markBMI, johnBMI, markHigherBMI);
 
 let whoIsHigher, notHigher, whoIsHigherBMI;
 
-if (markHigherBMI) {
+if (markBMI > johnBMI) {
   whoIsHigher = "Mark";
   whoIsHigherBMI = markBMI;
   notHigher = "John";
@@ -190,5 +190,5 @@ if (markHigherBMI) {
 }
 
 console.log(
-  `${whoIsHigher}'s (${whoIsHigherBMI}) BMI is higher than ${notHigher}'s (${notHigherBMI})`
+  `${whoIsHigher}'s BMI (${whoIsHigherBMI})is higher than ${notHigher}'s (${notHigherBMI})`
 );
