@@ -205,3 +205,10 @@ console.log("I am " + 23 + " years old");
 console.log("23" - "10" - 3);
 console.log(2 + 3 + 4 + "5");
 console.log("10" - "4" - "3" - 2 + "5");
+
+// 1) solutions
+// 4
+// 617
+// 23
+// false
+// 118 (1143)
