@@ -8,7 +8,8 @@
 === Part 1
 
 .cmds run in browser dev tools console
-```javascript
+[source,javascript]
+```
 alert("hello world!")
 let js = 'amazing'
 if (js === 'amazing') alert('Javascript is fun!')
@@ -77,3 +78,10 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 ** don't need to define variables? ( `lastName = s` works )
 *** instead of being scoped it will create a property on global object
 * mutate a variable = re-assigning it
+
+.operators
+|===
+| math operators | all normal ones
+| assignment operators | `+=`, `*=`, `--`, `++`
+| comparison operators | all normal ones
+|===
