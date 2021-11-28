@@ -1,0 +1,27 @@
+= HTML & CSS Course
+
+:toc:
+:imagesdir: note_images/
+
+== 02 JS Funamentals
+
+.cmds run in browser dev tools console
+```javascript
+alert("hello world!")
+let js = 'amazing'
+if (js === 'amazing') alert('Javascript is fun!')
+js = 'boring'
+if (js === 'amazing') alert('Javascript is fun!')
+40+8+23-10
+```
+
+* JavaScript (JS) - a high level, object oriented, multi-paradigm programming language
+** multi-paradigm - can use multiple programming styles (imperative and declarative (ways to structure our code))
+* role of JS in web dev
+** html = content ( noun )
+** css = presentation ( adjectives )
+** js = building web applications/dynamic programming language ( verbs )
++
+image:Screenshot_20211128_141119.png[JS role in web]
++
+* dynamic effects and web applications in the browser
