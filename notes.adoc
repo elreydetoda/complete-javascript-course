@@ -5,6 +5,8 @@
 
 == 02 JS Funamentals
 
+=== Part 1
+
 .cmds run in browser dev tools console
 ```javascript
 alert("hello world!")
@@ -33,4 +35,13 @@ image:Screenshot_20211128_144838.png[JS not just client side]
 +
 image:Screenshot_20211128_150223.png[JS release info]
 +
-* 
+* Value is a piece of data (i.e. string or number)
+** smallest piece of information in JS
+* variables used to assign values
+* convention is to use camelCase
+** variables can't start with digit
+** variables can only container alphanumeric + `_` + `$`
+** can't use JS keywords
+** `name` is a reserved keyword, but legal to use
+** convention to not use upper case letter, because used for specific thing (probably class names) in OOP
+** constance that never change = all caps
