@@ -87,3 +87,8 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 |===
 
 * operator precedence: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table
+* template literals for constucting strings
+** require using `` for string to template, or else won't work
+** brought with ES6
+** quite a lot of developers use `` for every string, so they don't have to think about which quotes to use
+** used for multiline strings
