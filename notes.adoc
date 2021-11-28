@@ -85,3 +85,5 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 | assignment operators | `+=`, `*=`, `--`, `++`
 | comparison operators | all normal ones
 |===
+
+* operator precedence: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Operator_Precedence#table

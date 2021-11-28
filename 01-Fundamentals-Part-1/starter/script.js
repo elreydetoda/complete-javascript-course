@@ -63,3 +63,7 @@ const description =
   "Portugal is in Europe, and its 11 million people speak portuguese";
 
 // copmarison operators
+
+let x, y;
+x = y = 25 - 10 - 5;
+console.log(x, y);
