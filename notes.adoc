@@ -45,3 +45,8 @@ image:Screenshot_20211128_150223.png[JS release info]
 ** `name` is a reserved keyword, but legal to use
 ** convention to not use upper case letter, because used for specific thing (probably class names) in OOP
 ** constance that never change = all caps
++
+.already broke it :)
+image:Screenshot_20211128_152640.png[already broke it]
+.console log
+image:Screenshot_20211128_152851.png[already broke it]
