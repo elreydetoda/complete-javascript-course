@@ -50,4 +50,16 @@ x++; // x = x + 1
 x--; // x = x - 1
 console.log(x);
 
+population = 1000;
+
+console.log(population / 2);
+population++;
+console.log(population);
+finPop = 6000000;
+averPop = 33000000;
+console.log(population > finPop);
+console.log(population > averPop);
+const description =
+  "Portugal is in Europe, and its 11 million people speak portuguese";
+
 // copmarison operators
