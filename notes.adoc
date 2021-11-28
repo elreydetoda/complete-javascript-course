@@ -50,3 +50,16 @@ image:Screenshot_20211128_150223.png[JS release info]
 image:Screenshot_20211128_152640.png[already broke it]
 .console log
 image:Screenshot_20211128_152851.png[already broke it]
++
+* every value is either an object (using `{}`) or a primitive value (prob. int, str, etc...)
+* other value information
++
+.7 primitive data types
+image:Screenshot_20211128_153419.png[7 primitive data types]
++
+* value holds data type, not variable
+* opperator: `typeof`
+* `let` is used for declaration
+* dynamic typing, just re-assign variable with another type (can check with `typeof varString`)
+* declare empty variable = undefined
+* `typeof null` -> object, but should return `null`. Never fixed for reverse compatibility, but is considered a bug in the `typeof` function
