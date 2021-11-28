@@ -194,45 +194,61 @@ const countryz = "US";
 // );
 
 // type conversion
-const inputYear = "1991";
-console.log(Number(inputYear) + 18);
-console.log(typeof NaN);
+// const inputYear = "1991";
+// console.log(Number(inputYear) + 18);
+// console.log(typeof NaN);
 
-console.log(String(23), 23);
+// console.log(String(23), 23);
 
-// type coercion
-console.log("I am " + 23 + " years old");
-console.log("23" - "10" - 3);
-console.log(2 + 3 + 4 + "5");
-console.log("10" - "4" - "3" - 2 + "5");
+// // type coercion
+// console.log("I am " + 23 + " years old");
+// console.log("23" - "10" - 3);
+// console.log(2 + 3 + 4 + "5");
+// console.log("10" - "4" - "3" - 2 + "5");
 
-// 1) solutions
-// 4
-// 617
-// 23
-// false
-// 118 (1143)
+// // 1) solutions
+// // 4
+// // 617
+// // 23
+// // false
+// // 118 (1143)
 
-// truthy vs falsy
+// // truthy vs falsy
 
-console.log(Boolean(0));
-console.log(Boolean(undefined));
-console.log(Boolean("Jonas"));
-console.log(Boolean({}));
+// console.log(Boolean(0));
+// console.log(Boolean(undefined));
+// console.log(Boolean("Jonas"));
+// console.log(Boolean({}));
 
-// const money = 0;
-const money = 100;
-if (money) {
-  console.log("Don't spend it all ;)");
-} else {
-  console.log("You should get a job!");
-}
+// // const money = 0;
+// const money = 100;
+// if (money) {
+//   console.log("Don't spend it all ;)");
+// } else {
+//   console.log("You should get a job!");
+// }
 
-// let height;
-// let height = 100;
-let height = 0;
-if (height) {
-  console.log(`Yay! height is defined`);
-} else {
-  console.log(`Height is undefined`);
-}
+// // let height;
+// // let height = 100;
+// let height = 0;
+// if (height) {
+//   console.log(`Yay! height is defined`);
+// } else {
+//   console.log(`Height is undefined`);
+// }
+
+// const age = 17;
+// const age = 18;
+// const age = "18";
+// if (age === 18) console.log(`You Just became and adult :D (strict)`);
+// if (age == 18) console.log(`You Just became and adult :D (loose)`);
+
+// // const favorite = prompt("What's your favorite number?");
+// const favorite = Number(prompt("What's your favorite number?"));
+// console.log(favorite);
+// console.log(typeof favorite);
+
+// if (false) {
+// } else if (false) {
+// } else {
+// }

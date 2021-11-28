@@ -110,3 +110,11 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 ** logical context
 *** if else statement
 *** logical operators
+
+=== Equality operators
+
+* `===` = strict equality operator (doesn't perform type coercion)
+* `==` = loose equality operator (does perform type coercion)
+** avoid AS much as possible! use `===` instead
+* `!==` = strict
+* `!=` = loose
