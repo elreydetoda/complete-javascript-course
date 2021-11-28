@@ -21,3 +21,10 @@ console.log(typeof isIsland);
 console.log(typeof population);
 console.log(typeof country);
 console.log(typeof language);
+
+language = "en";
+
+console.log(language);
+
+const countryz = "US";
+// countryz = "bobby";
