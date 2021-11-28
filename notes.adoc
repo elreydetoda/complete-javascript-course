@@ -25,3 +25,12 @@ if (js === 'amazing') alert('Javascript is fun!')
 image:Screenshot_20211128_141119.png[JS role in web]
 +
 * dynamic effects and web applications in the browser
+* JS is used for lots of things, not just for client side code
++
+image:Screenshot_20211128_144838.png[JS not just client side]
++
+* JavaScript releases
++
+image:Screenshot_20211128_150223.png[JS release info]
++
+* 
