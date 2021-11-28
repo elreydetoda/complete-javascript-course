@@ -125,21 +125,70 @@ const countryz = "US";
 // const description = `Portugal is in Europe, and its 11 million people speak portuguese`;
 
 // const age = 19;
-const age = 15;
+// const age = 15;
 
-// if (isOldEnough) {
-if (age >= 18) {
-  console.log("Sara can start driving license 🚗");
+// // if (isOldEnough) {
+// if (age >= 18) {
+//   console.log("Sara can start driving license 🚗");
+// } else {
+//   console.log(`Sara is too young wait another ${18 - age} years :)`);
+// }
+
+// // const birthYear = 1991;
+// const birthYear = 2012;
+// let century;
+// if (birthYear <= 2000) {
+//   century = 20;
+// } else {
+//   century = 21;
+// }
+// console.log(century);
+
+// Coding challenge 1
+// *************************
+// data 1
+// *************************
+
+const markWeight = 78;
+const markHeight = 1.69;
+const johnWeight = 92;
+const johnHeight = 1.95;
+
+const markBMI = markWeight / markHeight ** 2;
+const johnBMI = johnWeight / johnHeight ** 2;
+const markHigherBMI = markBMI > johnBMI;
+
+console.log(markBMI, johnBMI, markHigherBMI);
+
+// *************************
+// data 2
+// *************************
+
+// const markWeight = 95;
+// const markHeight = 1.88;
+// const johnWeight = 85;
+// const johnHeight = 1.76;
+
+// const markBMI = markWeight / markHeight ** 2;
+// const johnBMI = johnWeight / johnHeight ** 2;
+// const markHigherBMI = markBMI > johnBMI;
+
+// console.log(markBMI, johnBMI, markHigherBMI);
+
+let whoIsHigher, notHigher, whoIsHigherBMI;
+
+if (markHigherBMI) {
+  whoIsHigher = "Mark";
+  whoIsHigherBMI = markBMI;
+  notHigher = "John";
+  notHigherBMI = johnBMI;
 } else {
-  console.log(`Sara is too young wait another ${18 - age} years :)`);
+  whoIsHigher = "John";
+  whoIsHigherBMI = johnBMI;
+  notHigher = "Mark";
+  notHigherBMI = markBMI;
 }
 
-// const birthYear = 1991;
-const birthYear = 2012;
-let century;
-if (birthYear <= 2000) {
-  century = 20;
-} else {
-  century = 21;
-}
-console.log(century);
+console.log(
+  `${whoIsHigher}'s (${whoIsHigherBMI}) BMI is higher than ${notHigher}'s (${notHigherBMI})`
+);
