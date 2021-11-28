@@ -63,3 +63,17 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 * dynamic typing, just re-assign variable with another type (can check with `typeof varString`)
 * declare empty variable = undefined
 * `typeof null` -> object, but should return `null`. Never fixed for reverse compatibility, but is considered a bug in the `typeof` function
+* variables definitions
+** `let` - when variables need to be mutable
+*** block scoped
+** `const` - creates an immutable variable
+*** can't create empty variables
+** `var` - appears to work like `let`, but works differently under the hood
+*** function scoped
+*** old way for defining variables
+** `let` and `const` were defined in ES6, and `var` was old way
+** use `const` by default, unless you need mutable variables
+*** better to make immutable variables by default to help prevent bugs
+** don't need to define variables? ( `lastName = s` works )
+*** instead of being scoped it will create a property on global object
+* mutate a variable = re-assigning it
