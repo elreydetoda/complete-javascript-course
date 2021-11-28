@@ -95,3 +95,18 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 * if else = control structure
 * type conversion/coercion
 ** NaN when operation fails to produce a new number (invalid number)
+
+
+=== truthy vs falsy
+
+* truthy & falsy are values that convert to the corrisponding bool value when converted to boolean value
+* 5 falsy values
+** 0
+** ''
+** undefined
+** null
+** NaN
+* almost always happens implicetly with type coercion
+** logical context
+*** if else statement
+*** logical operators

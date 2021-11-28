@@ -212,3 +212,27 @@ console.log("10" - "4" - "3" - 2 + "5");
 // 23
 // false
 // 118 (1143)
+
+// truthy vs falsy
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean("Jonas"));
+console.log(Boolean({}));
+
+// const money = 0;
+const money = 100;
+if (money) {
+  console.log("Don't spend it all ;)");
+} else {
+  console.log("You should get a job!");
+}
+
+// let height;
+// let height = 100;
+let height = 0;
+if (height) {
+  console.log(`Yay! height is defined`);
+} else {
+  console.log(`Height is undefined`);
+}
