@@ -290,16 +290,54 @@ console.log(js$);
 // }
 
 // assignment
-const language = "en";
-// const population = 49000000;
-const population = 51000000;
-const isIsland = false;
-const country = "US";
+// const language = "en";
+// // const population = 49000000;
+// const population = 51000000;
+// const isIsland = false;
+// const country = "US";
 
-if (language === "en" && population < 50000000 && !isIsland) {
-  console.log(`You should live in ${country} :)`);
-} else {
-  console.log(`${country} does not meet your criteria :(`);
-}
+// if (language === "en" && population < 50000000 && !isIsland) {
+//   console.log(`You should live in ${country} :)`);
+// } else {
+//   console.log(`${country} does not meet your criteria :(`);
+// }
 
 // Coding challenge 3
+
+const gamesPlayed = 3;
+// original scores
+// const dolphinsAveScore = (96 + 108 + 89) / gamesPlayed;
+// const koalasAveScore = (88 + 91 + 110) / gamesPlayed;
+// bonus 1
+// const dolphinsAveScore = (97 + 112 + 101) / gamesPlayed;
+// const koalasAveScore = (109 + 95 + 123) / gamesPlayed;
+// bonus 2
+const dolphinsAveScore = (97 + 112 + 101) / gamesPlayed;
+const koalasAveScore = (109 + 95 + 106) / gamesPlayed;
+let winner, winnerScore;
+
+if (dolphinsAveScore > koalasAveScore) {
+  winner = "Dolphins";
+} else if (dolphinsAveScore < koalasAveScore) {
+  winner = "Koalas";
+} else {
+  winner = "draw";
+}
+
+if (winner === "draw") {
+  winnerScore = 0;
+} else {
+  winnerScore = eval(`${winner.toLowerCase()}AveScore`);
+}
+
+if (!(winnerScore > 100)) {
+  winner = "";
+}
+
+if (winner && winner !== "draw") {
+  console.log(`${winner} win!`);
+} else if (winner && winner === "draw") {
+  console.log("There is a draw!");
+} else {
+  console.log("You're all loosers!");
+}
