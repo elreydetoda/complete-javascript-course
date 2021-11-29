@@ -8,25 +8,25 @@ console.log(js$);
 
 */
 // variable assignment
-let country = "US";
-let continent = "North America";
-let population = 99999999999999999999n;
-console.log(country);
-console.log(continent);
-console.log(population);
+// let country = "US";
+// let continent = "North America";
+// let population = 99999999999999999999n;
+// console.log(country);
+// console.log(continent);
+// console.log(population);
 
-let isIsland = false;
-let language;
-console.log(typeof isIsland);
-console.log(typeof population);
-console.log(typeof country);
-console.log(typeof language);
+// let isIsland = false;
+// let language;
+// console.log(typeof isIsland);
+// console.log(typeof population);
+// console.log(typeof country);
+// console.log(typeof language);
 
-language = "en";
+// language = "en";
 
-console.log(language);
+// console.log(language);
 
-const countryz = "US";
+// const countryz = "US";
 // countryz = "bobby";
 
 // math ops
@@ -144,7 +144,7 @@ const countryz = "US";
 // }
 // console.log(century);
 
-// Coding challenge 1
+// Coding challenge 2
 // *************************
 // data 1
 // *************************
@@ -265,3 +265,28 @@ const countryz = "US";
 // } else {
 //   console.log("No borders");
 // }
+
+const hasDriverLicense = true;
+let hasGoodVision = true;
+console.log(hasDriverLicense && hasGoodVision);
+hasGoodVision = false;
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
+console.log(!hasDriverLicense);
+
+hasGoodVision = true;
+// if (hasDriverLicense && hasGoodVision) {
+//   console.log("sara is able to drive");
+// } else {
+//   console.log("someone else should drive");
+// }
+// const isTired = true;
+const isTired = false;
+
+if (hasDriverLicense && hasGoodVision && !isTired) {
+  console.log("sara is able to drive");
+} else {
+  console.log("someone else should drive");
+}
+
+// Coding challenge 3
