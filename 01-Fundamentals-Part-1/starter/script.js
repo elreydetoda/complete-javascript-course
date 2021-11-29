@@ -304,43 +304,87 @@ console.log(js$);
 
 // Coding challenge 3
 
-const gamesPlayed = 3;
-// original scores
+// const gamesPlayed = 3;
+// // original scores
+// // const dolphinsAveScore = (96 + 108 + 89) / gamesPlayed;
+// // const koalasAveScore = (88 + 91 + 110) / gamesPlayed;
+// // bonus 1
+// // const dolphinsAveScore = (97 + 112 + 101) / gamesPlayed;
+// // const koalasAveScore = (109 + 95 + 123) / gamesPlayed;
+// // bonus 2
+// // const dolphinsAveScore = (97 + 112 + 101) / gamesPlayed;
+// // const koalasAveScore = (109 + 95 + 106) / gamesPlayed;
+// // watching video
 // const dolphinsAveScore = (96 + 108 + 89) / gamesPlayed;
-// const koalasAveScore = (88 + 91 + 110) / gamesPlayed;
-// bonus 1
-// const dolphinsAveScore = (97 + 112 + 101) / gamesPlayed;
-// const koalasAveScore = (109 + 95 + 123) / gamesPlayed;
-// bonus 2
-// const dolphinsAveScore = (97 + 112 + 101) / gamesPlayed;
-// const koalasAveScore = (109 + 95 + 106) / gamesPlayed;
-// watching video
-const dolphinsAveScore = (96 + 108 + 89) / gamesPlayed;
-const koalasAveScore = (88 + 91 + 120) / gamesPlayed;
-let winner, winnerScore;
+// const koalasAveScore = (88 + 91 + 120) / gamesPlayed;
+// let winner, winnerScore;
 
-if (dolphinsAveScore > koalasAveScore) {
-  winner = "Dolphins";
-} else if (dolphinsAveScore < koalasAveScore) {
-  winner = "Koalas";
-} else {
-  winner = "draw";
+// if (dolphinsAveScore > koalasAveScore) {
+//   winner = "Dolphins";
+// } else if (dolphinsAveScore < koalasAveScore) {
+//   winner = "Koalas";
+// } else {
+//   winner = "draw";
+// }
+
+// if (winner === "draw") {
+//   winnerScore = 0;
+// } else {
+//   winnerScore = eval(`${winner.toLowerCase()}AveScore`);
+// }
+
+// if (!(winnerScore > 100)) {
+//   winner = "";
+// }
+
+// if (winner && winner !== "draw") {
+//   console.log(`${winner} win!`);
+// } else if (winner && winner === "draw") {
+//   console.log("There is a draw!");
+// } else {
+//   console.log("You're all loosers!");
+// }
+
+const day = "monday";
+// const day = "wednesday";
+// const day = "thursday";
+// const day = "never";
+
+switch (day) {
+  case "monday":
+    console.log("Plan course structure");
+    console.log("Go to coding meetup");
+    break;
+  case "tuesday":
+    console.log("Prepare theory videos");
+    break;
+  case "wednesday":
+  case "thursday":
+    console.log("Write code examples");
+    break;
+  case "friday":
+    console.log("Record videos");
+    break;
+  case "saturday":
+  case "sunday":
+    console.log("Enjoy the weekend :D");
+    break;
+  default:
+    console.log("Not a valid day!");
+    break;
 }
 
-if (winner === "draw") {
-  winnerScore = 0;
+if (day === "monday") {
+  console.log("Plan course structure");
+  console.log("Go to coding meetup");
+} else if (day === "tuesday") {
+  console.log("Prepare theory videos");
+} else if (day === "wednesday" || day === "thursday") {
+  console.log("Write code examples");
+} else if (day === "friday") {
+  console.log("Record videos");
+} else if (day === "saturday" || day === "sunday") {
+  console.log("enjoy the weekend");
 } else {
-  winnerScore = eval(`${winner.toLowerCase()}AveScore`);
-}
-
-if (!(winnerScore > 100)) {
-  winner = "";
-}
-
-if (winner && winner !== "draw") {
-  console.log(`${winner} win!`);
-} else if (winner && winner === "draw") {
-  console.log("There is a draw!");
-} else {
-  console.log("You're all loosers!");
+  console.log("Not a valid day!");
 }

@@ -118,3 +118,7 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 ** avoid AS much as possible! use `===` instead
 * `!==` = strict
 * `!=` = loose
+
+=== Misc
+
+* switch statement compares with strict equality operator
