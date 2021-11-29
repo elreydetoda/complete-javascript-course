@@ -97,7 +97,7 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 ** NaN when operation fails to produce a new number (invalid number)
 
 
-=== truthy vs falsy
+==== truthy vs falsy
 
 * truthy & falsy are values that convert to the corrisponding bool value when converted to boolean value
 * 5 falsy values
@@ -111,7 +111,7 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 *** if else statement
 *** logical operators
 
-=== Equality operators
+==== Equality operators
 
 * `===` = strict equality operator (doesn't perform type coercion)
 * `==` = loose equality operator (does perform type coercion)
@@ -119,7 +119,7 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 * `!==` = strict
 * `!=` = loose
 
-=== Misc
+==== Misc
 
 * switch statement compares with strict equality operator
 * statements vs expressions
@@ -129,7 +129,7 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 * conditional (ternary) operator = `?`
 ** ternary operator allowed in template literal, so allows an if else operation inside template literal
 
-=== JS releases
+==== JS releases
 
 .brief history of JS
 image:Screenshot_20211128_205343.png[History of JS]
@@ -158,3 +158,33 @@ image:Screenshot_20211128_205343.png[History of JS]
 
 .why ES5 is still important to know
 image:Screenshot_20211128_210522.png[why important to know ES5]
+
+=== Part 2
+
+* strict mode - help make sure we write more secure JS code: `"use strict";`
+** need to be at beginning of file (comments can come first, because JS will ignore them)
+** can also enable on a per function/block, but probably just do at beginning of each file
+** 2 reasons why important
+*** prevents us from doing certain things
+*** helps prevent errors, and will cause errors to be visible when sometimes JS will fail silently
+** helps let you know if word will potentially be reserved
+** almost like bash hardened mode: https://elrey.casa/bash/scripting/harden
+
+==== Functions
+
+* start with `function` keyword
+** function body is everything between `{}`
+* calling/invoking/running = using the function previously defined
+* parameter = placeholder inside of function
+* argument = actual value passed into function to fill in parameter
+
+===== Declarations vs Expressions
+
+* anonymous function = function without a name
+* expressions is an anonymous function assigned to variable
+** expressions produce a value
+** functions are just a value (i.e. why you can store it into a variable)
+* declarations
+** can call before defined in code
+** happens because of hoisting
+* he prefers function expressions
