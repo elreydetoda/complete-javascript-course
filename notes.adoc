@@ -122,3 +122,9 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 === Misc
 
 * switch statement compares with strict equality operator
+* statements vs expressions
+** expression - produces a value
+** statements - bigger piece of code that doesn't produce value by itself (i.e. if statement)
+** template literals require expression not a statement (i.e. needs a value)
+* conditional (ternary) operator = `?`
+** ternary operator allowed in template literal, so allows an if else operation inside template literal
