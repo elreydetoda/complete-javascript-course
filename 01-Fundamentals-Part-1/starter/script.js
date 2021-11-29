@@ -424,9 +424,20 @@ console.log(js$);
 // console.log(`I like to drink ${age >= 18 ? "wine" : "water"}`);
 
 // const population = 3;
-const population = 300000000;
+// const population = 300000000;
+// console.log(
+//   `Portugal's population is ${
+//     population > 33000000 ? "above" : "below"
+//   } average`
+// );
+
+// coding challenge 4
+
+// const bill = 275;
+// const bill = 40;
+const bill = 430;
+const tip = bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
 console.log(
-  `Portugal's population is ${
-    population > 33000000 ? "above" : "below"
-  } average`
+  `The bill was ${bill}, the tip was ${tip}, and the total was ${bill + tip}`
 );
