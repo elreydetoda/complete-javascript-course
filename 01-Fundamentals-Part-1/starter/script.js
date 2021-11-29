@@ -312,8 +312,11 @@ const gamesPlayed = 3;
 // const dolphinsAveScore = (97 + 112 + 101) / gamesPlayed;
 // const koalasAveScore = (109 + 95 + 123) / gamesPlayed;
 // bonus 2
-const dolphinsAveScore = (97 + 112 + 101) / gamesPlayed;
-const koalasAveScore = (109 + 95 + 106) / gamesPlayed;
+// const dolphinsAveScore = (97 + 112 + 101) / gamesPlayed;
+// const koalasAveScore = (109 + 95 + 106) / gamesPlayed;
+// watching video
+const dolphinsAveScore = (96 + 108 + 89) / gamesPlayed;
+const koalasAveScore = (88 + 91 + 120) / gamesPlayed;
 let winner, winnerScore;
 
 if (dolphinsAveScore > koalasAveScore) {
