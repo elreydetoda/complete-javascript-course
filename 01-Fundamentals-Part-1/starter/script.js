@@ -266,27 +266,40 @@ console.log(js$);
 //   console.log("No borders");
 // }
 
-const hasDriverLicense = true;
-let hasGoodVision = true;
-console.log(hasDriverLicense && hasGoodVision);
-hasGoodVision = false;
-console.log(hasDriverLicense && hasGoodVision);
-console.log(hasDriverLicense || hasGoodVision);
-console.log(!hasDriverLicense);
+// const hasDriverLicense = true;
+// let hasGoodVision = true;
+// console.log(hasDriverLicense && hasGoodVision);
+// hasGoodVision = false;
+// console.log(hasDriverLicense && hasGoodVision);
+// console.log(hasDriverLicense || hasGoodVision);
+// console.log(!hasDriverLicense);
 
-hasGoodVision = true;
-// if (hasDriverLicense && hasGoodVision) {
+// hasGoodVision = true;
+// // if (hasDriverLicense && hasGoodVision) {
+// //   console.log("sara is able to drive");
+// // } else {
+// //   console.log("someone else should drive");
+// // }
+// // const isTired = true;
+// const isTired = false;
+
+// if (hasDriverLicense && hasGoodVision && !isTired) {
 //   console.log("sara is able to drive");
 // } else {
 //   console.log("someone else should drive");
 // }
-// const isTired = true;
-const isTired = false;
 
-if (hasDriverLicense && hasGoodVision && !isTired) {
-  console.log("sara is able to drive");
+// assignment
+const language = "en";
+// const population = 49000000;
+const population = 51000000;
+const isIsland = false;
+const country = "US";
+
+if (language === "en" && population < 50000000 && !isIsland) {
+  console.log(`You should live in ${country} :)`);
 } else {
-  console.log("someone else should drive");
+  console.log(`${country} does not meet your criteria :(`);
 }
 
 // Coding challenge 3
