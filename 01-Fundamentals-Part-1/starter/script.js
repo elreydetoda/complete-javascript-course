@@ -252,3 +252,16 @@ const countryz = "US";
 // } else if (false) {
 // } else {
 // }
+
+// let numNeighbors = prompt("How many neighbour countries does your country have?")
+// let numNeighbors = Number(
+//   prompt("How many neighbour countries does your country have?")
+// );
+// // if (numNeighbors == 1) {
+// if (numNeighbors === 1) {
+//   console.log(`only 1 border!`);
+// } else if (numNeighbors > 1) {
+//   console.log(`More than 1 border`);
+// } else {
+//   console.log("No borders");
+// }
