@@ -182,9 +182,11 @@ image:Screenshot_20211128_210522.png[why important to know ES5]
 
 * anonymous function = function without a name
 * expressions is an anonymous function assigned to variable
-** expressions produce a value
-** functions are just a value (i.e. why you can store it into a variable)
+
+IMPORTANT: expressions produce a value *&*
+functions are just a value (i.e. why you can store it into a variable)
+
 * declarations
-** can call before defined in code
+** can call function before defined in code
 ** happens because of hoisting
 * he prefers function expressions

@@ -35,16 +35,36 @@
 // const appleOrangeJuice = fruitProcessor(2, 4);
 // console.log(appleOrangeJuice);
 
-function calcAge1(birthYear) {
-  return 2037 - birthYear;
+// ASSIGNMENT
+console.log(describeCountry('Finland', '6 million', 'Helsinki'))
+console.log(describeCountry('US', '3 billion', 'Washington DC'))
+console.log(describeCountry('Mexico', '2 million', 'Mexico City'))
+
+// // function declaration
+// function calcAge1(birthYear) {
+//   return 2037 - birthYear;
+// }
+// const age1 = calcAge1(1991);
+
+// // function expression
+// const calcAge2 = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+// const age2 = calcAge2(1991);
+
+// console.log(age1, age2);
+
+function describeCountry(country, population, capitalCity) {
+  return `${country} has ${population} people and its capital city is ${capitalCity}`
 }
-const age1 = calcAge1(1991);
 
-const calcAge2 = function (birthYear) {
-  return 2037 - birthYear;
-};
-const age2 = calcAge2(1991);
+// ASSIGNMENT
+function percentagOfWorld1(population){
+  return `${(population/7900000000)*100}%`
+}
+const percentagOfWorld2 = function (population){
+  return `${(population/7900000000)*100}%`
+}
 
-console.log(age1, age2);
-
-// TODO: do the missed assignments (functions and function declaration vs expressions)
+console.log(percentagOfWorld1(1441000000))
+console.log(percentagOfWorld2(1441000000))
