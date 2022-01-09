@@ -350,56 +350,86 @@
 // myCountry['population'] -= 2000000
 // console.log(myCountry.population)
 
-const jonas = {
-  firstName: 'Jonas',
-  lastName: 'Schmedtmann',
-  birthYear: 1991,
-  job: 'teacher',
-  friends: ['Michael', 'Peter', 'Steven'],
-  hasDriversLicense: true,
-  // calcAge: function(birthYear) {
-  //   return 2037 - birthYear
-  // }
-  // calcAge: function() {
-  //   return 2037 - this.birthYear
-  // }
-  calcAge: function() {
-    this.age = 2037 - this.birthYear
-    return this.age
+// const jonas = {
+//   firstName: 'Jonas',
+//   lastName: 'Schmedtmann',
+//   birthYear: 1991,
+//   job: 'teacher',
+//   friends: ['Michael', 'Peter', 'Steven'],
+//   hasDriversLicense: true,
+//   // calcAge: function(birthYear) {
+//   //   return 2037 - birthYear
+//   // }
+//   // calcAge: function() {
+//   //   return 2037 - this.birthYear
+//   // }
+//   calcAge: function() {
+//     this.age = 2037 - this.birthYear
+//     return this.age
+//   },
+//   // wasn't working for some reason `this` is referencing global (Window) object
+//   // driversLicense: () => this //? 'a' : 'no'
+//   getSummary: function() {
+//     return `${this.firstName} is a ${this.calcAge()}-year old teacher, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+//   }
+// };
+
+// // console.log(jonas.calcAge())
+// // console.log(jonas.age)
+
+// // challenge
+// console.log(jonas.getSummary())
+
+// // ASSIGNMENT
+
+// const myCountry = {
+//   country: 'USA',
+//   capital: 'Washington DC',
+//   language: 'english',
+//   population: 3441000000,
+//   neighbours: [ 'Mexico', 'Canada', ],
+//   describe: function () {
+//     return `${this.country} has ${this.population} ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a captial called ${this.capital}.`
+//   },
+//   checkIsland: function () {
+//     this.isIsland = this.neighbours.length > 1 ? true : false
+//     return this.isIsland
+//   }
+// };
+// console.log(myCountry.describe());
+// console.log(myCountry.checkIsland())
+// console.log(myCountry.isIsland)
+// myCountry.neighbours.pop()
+// myCountry.neighbours.pop()
+// console.log(myCountry.checkIsland())
+// console.log(myCountry.isIsland)
+
+
+//////////////////////////////////////////////////
+// Coding Challenge 3
+const mark = {
+  fullName: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
+  calcBMI: function (){
+    this.BMI = this.mass / (this.height * 2);
+    return this.BMI;
   },
-  // wasn't working for some reason `this` is referencing global (Window) object
-  // driversLicense: () => this //? 'a' : 'no'
-  getSummary: function() {
-    return `${this.firstName} is a ${this.calcAge()}-year old teacher, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
-  }
+};
+const john = {
+  fullName: 'John Smith',
+  mass: 92,
+  height: 1.95,
+  calcBMI: function (){
+    this.BMI = this.mass / (this.height * 2);
+    return this.BMI;
+  },
 };
 
-// console.log(jonas.calcAge())
-// console.log(jonas.age)
+if (mark.calcBMI() > john.calcBMI()) {
+  console.log(`${mark.fullName}'s BMI (${mark.BMI}) is higher than ${john.fullName}'s (${john.BMI})!`)
+} else {
+  console.log(`${john.fullName}'s BMI (${john.BMI}) is higher than ${mark.fullName}'s (${mark.BMI})!`)
+}
 
-// challenge
-console.log(jonas.getSummary())
-
-// ASSIGNMENT
-
-const myCountry = {
-  country: 'USA',
-  capital: 'Washington DC',
-  language: 'english',
-  population: 3441000000,
-  neighbours: [ 'Mexico', 'Canada', ],
-  describe: function () {
-    return `${this.country} has ${this.population} ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a captial called ${this.capital}.`
-  },
-  checkIsland: function () {
-    this.isIsland = this.neighbours.length > 1 ? true : false
-    return this.isIsland
-  }
-};
-console.log(myCountry.describe());
-console.log(myCountry.checkIsland())
-console.log(myCountry.isIsland)
-myCountry.neighbours.pop()
-myCountry.neighbours.pop()
-console.log(myCountry.checkIsland())
-console.log(myCountry.isIsland)
+//////////////////////////////////////////////////
