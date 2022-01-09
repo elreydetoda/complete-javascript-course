@@ -369,11 +369,8 @@ const jonas = {
   },
   // wasn't working for some reason `this` is referencing global (Window) object
   // driversLicense: () => this //? 'a' : 'no'
-  driversLicense: function() {
-    return this.hasDriversLicense ? 'a' : 'no'
-  },
   getSummary: function() {
-    return `${this.firstName} is a ${this.calcAge()}-year old teacher, and he has ${this.driversLicense() } driver's license`
+    return `${this.firstName} is a ${this.calcAge()}-year old teacher, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
   }
 };
 
