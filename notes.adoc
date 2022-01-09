@@ -211,3 +211,4 @@ functions are just a value (i.e. why you can store it into a variable)
 
 ===== Dot vs Bracket Notation
 
+* backet notation allows you to use expressions
