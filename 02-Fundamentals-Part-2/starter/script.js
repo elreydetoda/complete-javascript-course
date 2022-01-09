@@ -109,20 +109,39 @@
 // console.log(describePopulation('China', 1441000000))
 
 
-function calcAge(birthYear) {
-  return 2037 - birthYear
-}
+// function calcAge(birthYear) {
+//   return 2037 - birthYear
+// }
 
-function yearsUntilRetirement (birthYear, firstName) {
-  const retirement = 65 - calcAge(birthYear);
-  if (retirement > 0) {
-    console.log(`${firstName} retires in ${retirement}`);
-    return retirement
+// function yearsUntilRetirement (birthYear, firstName) {
+//   const retirement = 65 - calcAge(birthYear);
+//   if (retirement > 0) {
+//     console.log(`${firstName} retires in ${retirement}`);
+//     return retirement
+//   } else {
+//     console.log(`${firstName} has already retired 🥳`);
+//     return -1
+//   }
+// }
+
+// console.log(yearsUntilRetirement(1991, 'bobby'));
+// console.log(yearsUntilRetirement(1950, 'bobby'));
+
+//////////////////////////////////////////////////
+// coding challenge 1
+
+const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3
+function checkWinner(avgDolphins, avgKoalas) {
+  if (avgDolphins >= (avgKoalas * 2)) {
+    console.log(`Dolphin's win (${avgDolphins} vs. ${avgKoalas})!`)
+  } else if (avgKoalas >= (avgDolphins * 2)) {
+    console.log(`Koala's win! (${avgKoalas} vs. ${avgDolphins})`)
   } else {
-    console.log(`${firstName} has already retired 🥳`);
-    return -1
+    console.log('No one wins!')
   }
 }
 
-console.log(yearsUntilRetirement(1991, 'bobby'));
-console.log(yearsUntilRetirement(1950, 'bobby'));
+checkWinner(calcAverage(44, 23, 71), calcAverage(65, 54, 49))
+checkWinner(calcAverage(85,54,41), calcAverage(23,34,27))
+
+//////////////////////////////////////////////////
