@@ -59,9 +59,9 @@
 // }
 
 // // ASSIGNMENT
-// function percentagOfWorld1(population){
-//   return `${(population/7900000000)*100}%`
-// }
+function percentagOfWorld1(population){
+  return `${(population/7900000000)*100}%`
+}
 // const percentagOfWorld2 = function (population){
 //   return `${(population/7900000000)*100}%`
 // }
@@ -88,3 +88,22 @@
 // const percentagOfWorld3 = population => `${(population/7900000000)*100}%`
 // console.log(percentagOfWorld3(1441000000))
 
+
+// function cutFruitPieces(fruit) {
+//   return fruit * 4;
+// }
+
+// function fruitProcessor(apples, oranges) {
+//   const applePieces = cutFruitPieces(apples);
+//   const orangePieces = cutFruitPieces(oranges);
+//   const juice = `Juice with ${applePieces} pieces of apple and ${orangePieces} pieces of orange.`;
+//   return juice;
+// }
+
+// console.log(fruitProcessor(2,3))
+
+function describePopulation (country, population) {
+  return `${country} has ${population} people, which is about ${percentagOfWorld1(population)} of the world`
+}
+
+console.log(describePopulation('China', 1441000000))
