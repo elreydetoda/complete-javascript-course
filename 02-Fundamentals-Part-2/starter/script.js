@@ -70,14 +70,21 @@
 // console.log(percentagOfWorld2(1441000000))
 
 // Arrow function
-const calcAge3 = birthYear => 2037 - birthYear;
+// const calcAge3 = birthYear => 2037 - birthYear;
 
-console.log(calcAge3(1991));
+// console.log(calcAge3(1991));
 
-const yearsUntilRetirement = (birthYear) => {
-  const age = 2037 - birthYear;
-  const retirement = 65 - age;
-  return retirement;
-}
+// const yearsUntilRetirement = (birthYear, firstName) => {
+//   const age = 2037 - birthYear;
+//   const retirement = 65 - age;
+//   return `${firstName} retires in ${retirement}`;
+// }
 
-console.log(yearsUntilRetirement(1991));
+// console.log(yearsUntilRetirement(1991, 'bobby'));
+// console.log(yearsUntilRetirement(1980, 'jonas'));
+
+// ASSIGNMENT
+
+// const percentagOfWorld3 = population => `${(population/7900000000)*100}%`
+// console.log(percentagOfWorld3(1441000000))
+

@@ -191,3 +191,4 @@ functions are just a value (i.e. why you can store it into a variable)
 ** happens because of hoisting
 * he prefers function expressions
 * arrow function (ES6 *ONLY*)
+** they don't get a `this` keyword
