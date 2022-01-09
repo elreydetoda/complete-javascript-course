@@ -330,7 +330,22 @@ console.log(jonas['last' + nameKey]);
 
 jonas.location = 'Portugal';
 jonas['twitter'] = '@jonasschmedtman';
-console.log(jonas)
+console.log(jonas);
 
 // challenge
-console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and hist best friend is called ${jonas.friends[0]}`)
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+
+// ASSIGNMENT
+
+const myCountry = {
+  country: 'USA',
+  capital: 'Washington DC',
+  language: 'english',
+  population: 3441000000,
+  neighbours: [ 'Mexico', 'Canada', ],
+};
+console.log(`${myCountry.country} has ${myCountry.population} ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a captial called ${myCountry.capital}.`);
+myCountry.population += 2000000
+console.log(myCountry.population)
+myCountry['population'] -= 2000000
+console.log(myCountry.population)
