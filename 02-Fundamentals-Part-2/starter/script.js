@@ -59,9 +59,9 @@
 // }
 
 // // ASSIGNMENT
-function percentageOfWorld1(population){
-  return `${(population/7900000000)*100}%`
-}
+// function percentageOfWorld1(population){
+//   return `${(population/7900000000)*100}%`
+// }
 // const percentageOfWorld2 = function (population){
 //   return `${(population/7900000000)*100}%`
 // }
@@ -128,7 +128,7 @@ function percentageOfWorld1(population){
 // console.log(yearsUntilRetirement(1950, 'bobby'));
 
 //////////////////////////////////////////////////
-// coding challenge 1
+// Coding Challenge 1
 
 // const calcAverage = (a, b, c) => (a + b + c) / 3
 // function checkWinner(avgDolphins, avgKoalas) {
@@ -146,62 +146,139 @@ function percentageOfWorld1(population){
 
 //////////////////////////////////////////////////
 
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
+
+// const y = new Array(1991, 1984, 2008, 2020);
+
+// console.log(friends[0], friends[2]);
+
+// console.log(friends.length);
+// console.log(friends[friends.length - 1]);
+// friends[2] = 'Jay';
+
+// console.log(friends);
+
+// const firstName = 'Jonas';
+// const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+
+// console.log(jonas);
+// console.log(jonas.length);
+
+// // exercise
+// function calcAge(birthYear) {
+//   return 2037 - birthYear;
+// }
+// const years = [1990, 1967, 2002, 2010, 2018];
+
+// const age1 = calcAge(years[0]);
+// const age2 = calcAge(years[1]);
+// const age3 = calcAge(years[years.length - 1]);
+// console.log(age1, age2, age3);
+
+// const ages = [
+//   calcAge(years[0]),
+//   calcAge(years[1]),
+//   calcAge(years[years.length - 1])
+// ];
+// console.log(ages);
+
+// // ASSIGNMENT
+
+// const populations = [
+//   1441000000,
+//   3441000000,
+//   4441000000,
+//   7441000000,
+// ];
+// console.log(populations)
+// if (populations.length === 4) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }
+
+// const percentages = [
+//   percentageOfWorld1(populations[0]),
+//   percentageOfWorld1(populations[1]),
+//   percentageOfWorld1(populations[2]),
+//   percentageOfWorld1(populations[3]),
+// ];
+// console.log(percentages)
+
+
 const friends = ['Michael', 'Steven', 'Peter'];
 console.log(friends);
 
-const y = new Array(1991, 1984, 2008, 2020);
-
-console.log(friends[0], friends[2]);
-
-console.log(friends.length);
-console.log(friends[friends.length - 1]);
-friends[2] = 'Jay';
-
+// add elements
+const newLength = friends.push('Jay');
+console.log(friends, newLength);
+friends.unshift('John');
 console.log(friends);
 
-const firstName = 'Jonas';
-const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+// remove elements
+friends.pop(); // Last
+const popped = friends.pop(); // Last
+console.log(friends, popped);
 
-console.log(jonas);
-console.log(jonas.length);
+friends.shift(); // First
+console.log(friends);
 
-// exercise
-function calcAge(birthYear) {
-  return 2037 - birthYear;
+
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
+
+// ES6 - STRICT EQUALITY
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+friends.push(23);
+console.log(friends.includes('23'));
+console.log(friends.includes(23));
+
+if (friends.includes('Steven')) {
+  console.log('You have a friend called Steven');
 }
-const years = [1990, 1967, 2002, 2010, 2018];
-
-const age1 = calcAge(years[0]);
-const age2 = calcAge(years[1]);
-const age3 = calcAge(years[years.length - 1]);
-console.log(age1, age2, age3);
-
-const ages = [
-  calcAge(years[0]),
-  calcAge(years[1]),
-  calcAge(years[years.length - 1])
-];
-console.log(ages);
 
 // ASSIGNMENT
 
-const populations = [
-  1441000000,
-  3441000000,
-  4441000000,
-  7441000000,
-];
-console.log(populations)
-if (populations.length === 4) {
-  console.log(true);
-} else {
-  console.log(false);
+const neighbours = [ 'Mexico', 'Canada', ];
+console.log(neighbours);
+neighbours.push('Utopia');
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+// neighbours.push('Germany');
+if (!neighbours.includes('Germany')) {
+  console.log('Probably not a central European country :D')
 }
+neighbours[neighbours.indexOf('Canada')] = 'New Canada'
+console.log(neighbours);
 
-const percentages = [
-  percentageOfWorld1(populations[0]),
-  percentageOfWorld1(populations[1]),
-  percentageOfWorld1(populations[2]),
-  percentageOfWorld1(populations[3]),
-];
-console.log(percentages)
+//////////////////////////////////////////////////
+// Coding Challenge 1
+function calcTip(bill) {
+  let tip;
+  if ((bill > 50) && (bill < 300)) {
+    tip = bill * .15;
+  } else {
+    tip = bill * .20;
+  }
+  return tip;
+}
+console.log(calcTip(100));
+console.log(calcTip(300));
+const bills = [ 125, 555, 44 ];
+console.log(bills)
+const tips = [
+  calcTip(bills[0]),
+  calcTip(bills[1]),
+  calcTip(bills[2]),
+]
+console.log(tips)
+const totals = [
+  bills[0] + tips[0],
+  bills[1] + tips[1],
+  bills[2] + tips[2],
+]
+console.log(totals)
+//////////////////////////////////////////////////
