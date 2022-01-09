@@ -257,28 +257,25 @@ console.log(neighbours);
 //////////////////////////////////////////////////
 // Coding Challenge 1
 function calcTip(bill) {
-  let tip;
-  if ((bill > 50) && (bill < 300)) {
-    tip = bill * .15;
-  } else {
-    tip = bill * .20;
-  }
-  return tip;
+  return bill >= 50 && bill <= 300 ? bill * .15 : bill * .2
 }
+
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * .15 : bill * .2
+
 console.log(calcTip(100));
 console.log(calcTip(300));
 const bills = [ 125, 555, 44 ];
-console.log(bills)
+console.log(bills);
 const tips = [
   calcTip(bills[0]),
   calcTip(bills[1]),
   calcTip(bills[2]),
-]
-console.log(tips)
+];
+console.log(tips);
 const totals = [
   bills[0] + tips[0],
   bills[1] + tips[1],
   bills[2] + tips[2],
-]
-console.log(totals)
+];
+console.log(totals);
 //////////////////////////////////////////////////
