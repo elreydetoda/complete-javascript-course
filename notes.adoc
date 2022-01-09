@@ -68,6 +68,9 @@ image:Screenshot_20211128_153419.png[7 primitive data types]
 ** `let` - when variables need to be mutable
 *** block scoped
 ** `const` - creates an immutable variable
++
+IMPORTANT: only immutable with primitive values
++
 *** can't create empty variables
 ** `var` - appears to work like `let`, but works differently under the hood
 *** function scoped
@@ -182,13 +185,22 @@ image:Screenshot_20211128_210522.png[why important to know ES5]
 
 * anonymous function = function without a name
 * expressions is an anonymous function assigned to variable
-
++
 IMPORTANT: expressions produce a value *&*
 functions are just a value (i.e. why you can store it into a variable)
-
++
 * declarations
 ** can call function before defined in code
 ** happens because of hoisting
 * he prefers function expressions
 * arrow function (ES6 *ONLY*)
 ** they don't get a `this` keyword
+
+
+==== Arrays
+
+* zero based (starts at 0 not 1)
+** have properties (i.e. `.length`)
+* expect an expression not a statement in the `[]`
+* not a primitive value
+* can modify array, but not replace whole array (i.e. redefine)

@@ -59,15 +59,15 @@
 // }
 
 // // ASSIGNMENT
-// function percentagOfWorld1(population){
-//   return `${(population/7900000000)*100}%`
-// }
-// const percentagOfWorld2 = function (population){
+function percentageOfWorld1(population){
+  return `${(population/7900000000)*100}%`
+}
+// const percentageOfWorld2 = function (population){
 //   return `${(population/7900000000)*100}%`
 // }
 
-// console.log(percentagOfWorld1(1441000000))
-// console.log(percentagOfWorld2(1441000000))
+// console.log(percentageOfWorld1(1441000000))
+// console.log(percentageOfWorld2(1441000000))
 
 // Arrow function
 // const calcAge3 = birthYear => 2037 - birthYear;
@@ -85,8 +85,8 @@
 
 // ASSIGNMENT
 
-// const percentagOfWorld3 = population => `${(population/7900000000)*100}%`
-// console.log(percentagOfWorld3(1441000000))
+// const percentageOfWorld3 = population => `${(population/7900000000)*100}%`
+// console.log(percentageOfWorld3(1441000000))
 
 
 // function cutFruitPieces(fruit) {
@@ -103,7 +103,7 @@
 // console.log(fruitProcessor(2,3))
 
 // function describePopulation (country, population) {
-//   return `${country} has ${population} people, which is about ${percentagOfWorld1(population)} of the world`
+//   return `${country} has ${population} people, which is about ${percentageOfWorld1(population)} of the world`
 // }
 
 // console.log(describePopulation('China', 1441000000))
@@ -130,18 +130,78 @@
 //////////////////////////////////////////////////
 // coding challenge 1
 
-const calcAverage = (a, b, c) => (a + b + c) / 3
-function checkWinner(avgDolphins, avgKoalas) {
-  if (avgDolphins >= (avgKoalas * 2)) {
-    console.log(`Dolphin's win (${avgDolphins} vs. ${avgKoalas})!`)
-  } else if (avgKoalas >= (avgDolphins * 2)) {
-    console.log(`Koala's win! (${avgKoalas} vs. ${avgDolphins})`)
-  } else {
-    console.log('No one wins!')
-  }
-}
+// const calcAverage = (a, b, c) => (a + b + c) / 3
+// function checkWinner(avgDolphins, avgKoalas) {
+//   if (avgDolphins >= (avgKoalas * 2)) {
+//     console.log(`Dolphin's win (${avgDolphins} vs. ${avgKoalas})!`)
+//   } else if (avgKoalas >= (avgDolphins * 2)) {
+//     console.log(`Koala's win! (${avgKoalas} vs. ${avgDolphins})`)
+//   } else {
+//     console.log('No one wins!')
+//   }
+// }
 
-checkWinner(calcAverage(44, 23, 71), calcAverage(65, 54, 49))
-checkWinner(calcAverage(85,54,41), calcAverage(23,34,27))
+// checkWinner(calcAverage(44, 23, 71), calcAverage(65, 54, 49))
+// checkWinner(calcAverage(85,54,41), calcAverage(23,34,27))
 
 //////////////////////////////////////////////////
+
+const friends = ['Michael', 'Steven', 'Peter'];
+console.log(friends);
+
+const y = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0], friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+friends[2] = 'Jay';
+
+console.log(friends);
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+
+console.log(jonas);
+console.log(jonas.length);
+
+// exercise
+function calcAge(birthYear) {
+  return 2037 - birthYear;
+}
+const years = [1990, 1967, 2002, 2010, 2018];
+
+const age1 = calcAge(years[0]);
+const age2 = calcAge(years[1]);
+const age3 = calcAge(years[years.length - 1]);
+console.log(age1, age2, age3);
+
+const ages = [
+  calcAge(years[0]),
+  calcAge(years[1]),
+  calcAge(years[years.length - 1])
+];
+console.log(ages);
+
+// ASSIGNMENT
+
+const populations = [
+  1441000000,
+  3441000000,
+  4441000000,
+  7441000000,
+];
+console.log(populations)
+if (populations.length === 4) {
+  console.log(true);
+} else {
+  console.log(false);
+}
+
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3]),
+];
+console.log(percentages)
