@@ -59,9 +59,9 @@
 // }
 
 // // ASSIGNMENT
-// function percentageOfWorld1(population){
-//   return `${(population/7900000000)*100}%`
-// }
+function percentageOfWorld1(population){
+  return `${(population/7900000000)*100}%`
+}
 // const percentageOfWorld2 = function (population){
 //   return `${(population/7900000000)*100}%`
 // }
@@ -435,12 +435,64 @@
 // //////////////////////////////////////////////////
 
 
-// for loop keeps running while condition is TRUE
-for(let rep = 1; rep <= 10; rep++){
-  console.log(`Lifting weights repetition ${rep}`)
-}
-// ASSIGNMENT
+// // for loop keeps running while condition is TRUE
+// for(let rep = 1; rep <= 10; rep++){
+//   console.log(`Lifting weights repetition ${rep}`)
+// }
+// // ASSIGNMENT
 
-for(let vote = 1; vote <= 50; vote++){
-  console.log(`Voter number ${vote} is currently voting`)
+// for(let vote = 1; vote <= 50; vote++){
+//   console.log(`Voter number ${vote} is currently voting`)
+// }
+
+const jonasArray = [
+  'Jonas',
+  'Schmedtmann',
+  2037 - 1991,
+  'teacher',
+  ['Michael', 'Peter', 'Steven'],
+  true
+];
+
+const jonasType = []
+for (let i = 0; i < jonasArray.length; i++) {
+  console.log(jonasArray[i], typeof(jonasArray[i]));
+  jonasType.push(typeof(jonasArray[i]));
 }
+console.log(jonasType)
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i< years.length; i++){
+  ages.push(2037 - years[i]);
+}
+console.log(ages)
+
+console.log('only strings')
+for (let i = 0; i < jonasArray.length; i++) {
+  if (typeof(jonasArray[i]) !== 'string') continue;
+  console.log(jonasArray[i], typeof(jonasArray[i]));
+}
+console.log('break w/number')
+for (let i = 0; i < jonasArray.length; i++) {
+  if (typeof(jonasArray[i]) === 'number') break;
+  console.log(jonasArray[i], typeof(jonasArray[i]));
+}
+
+// ASSIGNMENT
+const populations = [
+  1441000000,
+  3441000000,
+  4441000000,
+  7441000000,
+];
+
+const percentages2 = [];
+
+
+for (let i = 0; i < populations.length; i++) {
+  percentages2.push(percentageOfWorld1(populations[i]))
+}
+
+console.log(percentages2)
