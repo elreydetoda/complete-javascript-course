@@ -59,9 +59,9 @@
 // }
 
 // // ASSIGNMENT
-function percentagOfWorld1(population){
-  return `${(population/7900000000)*100}%`
-}
+// function percentagOfWorld1(population){
+//   return `${(population/7900000000)*100}%`
+// }
 // const percentagOfWorld2 = function (population){
 //   return `${(population/7900000000)*100}%`
 // }
@@ -102,8 +102,27 @@ function percentagOfWorld1(population){
 
 // console.log(fruitProcessor(2,3))
 
-function describePopulation (country, population) {
-  return `${country} has ${population} people, which is about ${percentagOfWorld1(population)} of the world`
+// function describePopulation (country, population) {
+//   return `${country} has ${population} people, which is about ${percentagOfWorld1(population)} of the world`
+// }
+
+// console.log(describePopulation('China', 1441000000))
+
+
+function calcAge(birthYear) {
+  return 2037 - birthYear
 }
 
-console.log(describePopulation('China', 1441000000))
+function yearsUntilRetirement (birthYear, firstName) {
+  const retirement = 65 - calcAge(birthYear);
+  if (retirement > 0) {
+    console.log(`${firstName} retires in ${retirement}`);
+    return retirement
+  } else {
+    console.log(`${firstName} has already retired 🥳`);
+    return -1
+  }
+}
+
+console.log(yearsUntilRetirement(1991, 'bobby'));
+console.log(yearsUntilRetirement(1950, 'bobby'));
