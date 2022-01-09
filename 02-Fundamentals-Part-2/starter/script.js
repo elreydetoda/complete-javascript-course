@@ -537,36 +537,60 @@ function percentageOfWorld1(population){
 //   console.log(`Lifting weights repetition ${rep}`)
 // }
 
-let rep = 1;
-while (rep <= 10) {
-  console.log(`WHILE: Lifting weights repetition ${rep}`)
-  rep++;
+// let rep = 1;
+// while (rep <= 10) {
+//   console.log(`WHILE: Lifting weights repetition ${rep}`)
+//   rep++;
+// }
+
+// let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice);
+
+// while (dice !== 6) {
+//   console.log(`You rolled a ${dice}`);
+//   dice = Math.trunc(Math.random() * 6) + 1;
+//   if (dice === 6) console.log('Loop is about to end...')
+// }
+
+// // ASSIGNMENT
+// const populations = [
+//   1441000000,
+//   3441000000,
+//   4441000000,
+//   7441000000,
+// ];
+
+// const percentages2 = [];
+
+
+// let index = 0;
+// while (percentages2.length !== populations.length) {
+//   percentages2.push(percentageOfWorld1(populations[index]))
+//   index++;
+// }
+
+// console.log(percentages2)
+
+
+//////////////////////////////////////////////////
+// Coding Challenge 4
+function calcTip(bill) {
+  return bill >= 50 && bill <= 300 ? bill * .15 : bill * .2
+}
+function calcAverage(arr) {
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) sum += arr[i];
+  return sum / arr.length
 }
 
-let dice = Math.trunc(Math.random() * 6) + 1;
-console.log(dice);
-
-while (dice !== 6) {
-  console.log(`You rolled a ${dice}`);
-  dice = Math.trunc(Math.random() * 6) + 1;
-  if (dice === 6) console.log('Loop is about to end...')
+const bills = [ 125, 555, 44 ];
+const tips = [];
+const totals = [];
+for (let i = 0; i < bills.length; i++) {
+  tips.push(calcTip(bills[i]));
+  totals.push(tips[i] + bills[i]);
 }
+console.log(bills, tips, totals);
 
-// ASSIGNMENT
-const populations = [
-  1441000000,
-  3441000000,
-  4441000000,
-  7441000000,
-];
-
-const percentages2 = [];
-
-
-let index = 0;
-while (percentages2.length !== populations.length) {
-  percentages2.push(percentageOfWorld1(populations[index]))
-  index++;
-}
-
-console.log(percentages2)
+console.log(calcAverage(totals))
+//////////////////////////////////////////////////
