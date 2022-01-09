@@ -130,7 +130,7 @@
 //////////////////////////////////////////////////
 // coding challenge 1
 
-const calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3
+const calcAverage = (a, b, c) => (a + b + c) / 3
 function checkWinner(avgDolphins, avgKoalas) {
   if (avgDolphins >= (avgKoalas * 2)) {
     console.log(`Dolphin's win (${avgDolphins} vs. ${avgKoalas})!`)
