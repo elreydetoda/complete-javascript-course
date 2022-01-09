@@ -205,9 +205,10 @@ functions are just a value (i.e. why you can store it into a variable)
 * not a primitive value
 * can modify array, but not replace whole array (i.e. redefine)
 
-==== Ojbects
+==== Objects
 
 * keys are also called a property
+* any function attached to an object is a method
 
 ===== Dot vs Bracket Notation
 
