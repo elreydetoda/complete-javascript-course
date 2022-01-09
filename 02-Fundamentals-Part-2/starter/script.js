@@ -498,37 +498,75 @@ function percentageOfWorld1(population){
 // console.log(percentages2)
 
 
-const jonasArray = [
-  'Jonas',
-  'Schmedtmann',
-  2037 - 1991,
-  'teacher',
-  ['Michael', 'Peter', 'Steven'],
-  true
-];
+// const jonasArray = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'Steven'],
+//   true
+// ];
 
 
-for (let i = jonasArray.length - 1; i >= 0; i--) {
-  console.log(i, jonasArray[i]);
+// for (let i = jonasArray.length - 1; i >= 0; i--) {
+//   console.log(i, jonasArray[i]);
+// }
+
+// for (let exercise = 1; exercise < 4; exercise++){
+//   console.log(`-----Starting exercise ${exercise}`);
+//   for (let rep = 1; rep < 6; rep++){
+//     console.log(`lifting weight repetition ${rep}`);
+//   }
+// }
+
+
+// // ASSIGNMENT
+// const listOfNeighbours = [
+//   ['Canada', 'Mexico'],
+//   ['Spain'],
+//   ['Norway', 'Sweden', 'Russia']
+// ]
+
+// for (let i = 0; i < listOfNeighbours.length; i++){
+//   for (let j = 0; j < listOfNeighbours[i].length; j++) {
+//     console.log(`Neighbor: ${listOfNeighbours[i][j]}`)
+//   }
+// }
+
+// for(let rep = 1; rep <= 10; rep++){
+//   console.log(`Lifting weights repetition ${rep}`)
+// }
+
+let rep = 1;
+while (rep <= 10) {
+  console.log(`WHILE: Lifting weights repetition ${rep}`)
+  rep++;
 }
 
-for (let exercise = 1; exercise < 4; exercise++){
-  console.log(`-----Starting exercise ${exercise}`);
-  for (let rep = 1; rep < 6; rep++){
-    console.log(`lifting weight repetition ${rep}`);
-  }
-}
+let dice = Math.trunc(Math.random() * 6) + 1;
+console.log(dice);
 
+while (dice !== 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log('Loop is about to end...')
+}
 
 // ASSIGNMENT
-const listOfNeighbours = [
-  ['Canada', 'Mexico'],
-  ['Spain'],
-  ['Norway', 'Sweden', 'Russia']
-]
+const populations = [
+  1441000000,
+  3441000000,
+  4441000000,
+  7441000000,
+];
 
-for (let i = 0; i < listOfNeighbours.length; i++){
-  for (let j = 0; j < listOfNeighbours[i].length; j++) {
-    console.log(`Neighbor: ${listOfNeighbours[i][j]}`)
-  }
+const percentages2 = [];
+
+
+let index = 0;
+while (percentages2.length !== populations.length) {
+  percentages2.push(percentageOfWorld1(populations[index]))
+  index++;
 }
+
+console.log(percentages2)
