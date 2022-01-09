@@ -445,6 +445,59 @@ function percentageOfWorld1(population){
 //   console.log(`Voter number ${vote} is currently voting`)
 // }
 
+// const jonasArray = [
+//   'Jonas',
+//   'Schmedtmann',
+//   2037 - 1991,
+//   'teacher',
+//   ['Michael', 'Peter', 'Steven'],
+//   true
+// ];
+
+// const jonasType = []
+// for (let i = 0; i < jonasArray.length; i++) {
+//   console.log(jonasArray[i], typeof(jonasArray[i]));
+//   jonasType.push(typeof(jonasArray[i]));
+// }
+// console.log(jonasType)
+
+// const years = [1991, 2007, 1969, 2020];
+// const ages = [];
+
+// for (let i = 0; i< years.length; i++){
+//   ages.push(2037 - years[i]);
+// }
+// console.log(ages)
+
+// console.log('only strings')
+// for (let i = 0; i < jonasArray.length; i++) {
+//   if (typeof(jonasArray[i]) !== 'string') continue;
+//   console.log(jonasArray[i], typeof(jonasArray[i]));
+// }
+// console.log('break w/number')
+// for (let i = 0; i < jonasArray.length; i++) {
+//   if (typeof(jonasArray[i]) === 'number') break;
+//   console.log(jonasArray[i], typeof(jonasArray[i]));
+// }
+
+// // ASSIGNMENT
+// const populations = [
+//   1441000000,
+//   3441000000,
+//   4441000000,
+//   7441000000,
+// ];
+
+// const percentages2 = [];
+
+
+// for (let i = 0; i < populations.length; i++) {
+//   percentages2.push(percentageOfWorld1(populations[i]))
+// }
+
+// console.log(percentages2)
+
+
 const jonasArray = [
   'Jonas',
   'Schmedtmann',
@@ -454,45 +507,28 @@ const jonasArray = [
   true
 ];
 
-const jonasType = []
-for (let i = 0; i < jonasArray.length; i++) {
-  console.log(jonasArray[i], typeof(jonasArray[i]));
-  jonasType.push(typeof(jonasArray[i]));
-}
-console.log(jonasType)
 
-const years = [1991, 2007, 1969, 2020];
-const ages = [];
+for (let i = jonasArray.length - 1; i >= 0; i--) {
+  console.log(i, jonasArray[i]);
+}
 
-for (let i = 0; i< years.length; i++){
-  ages.push(2037 - years[i]);
+for (let exercise = 1; exercise < 4; exercise++){
+  console.log(`-----Starting exercise ${exercise}`);
+  for (let rep = 1; rep < 6; rep++){
+    console.log(`lifting weight repetition ${rep}`);
+  }
 }
-console.log(ages)
 
-console.log('only strings')
-for (let i = 0; i < jonasArray.length; i++) {
-  if (typeof(jonasArray[i]) !== 'string') continue;
-  console.log(jonasArray[i], typeof(jonasArray[i]));
-}
-console.log('break w/number')
-for (let i = 0; i < jonasArray.length; i++) {
-  if (typeof(jonasArray[i]) === 'number') break;
-  console.log(jonasArray[i], typeof(jonasArray[i]));
-}
 
 // ASSIGNMENT
-const populations = [
-  1441000000,
-  3441000000,
-  4441000000,
-  7441000000,
-];
+const listOfNeighbours = [
+  ['Canada', 'Mexico'],
+  ['Spain'],
+  ['Norway', 'Sweden', 'Russia']
+]
 
-const percentages2 = [];
-
-
-for (let i = 0; i < populations.length; i++) {
-  percentages2.push(percentageOfWorld1(populations[i]))
+for (let i = 0; i < listOfNeighbours.length; i++){
+  for (let j = 0; j < listOfNeighbours[i].length; j++) {
+    console.log(`Neighbor: ${listOfNeighbours[i][j]}`)
+  }
 }
-
-console.log(percentages2)
