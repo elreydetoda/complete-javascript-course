@@ -204,3 +204,10 @@ functions are just a value (i.e. why you can store it into a variable)
 * expect an expression not a statement in the `[]`
 * not a primitive value
 * can modify array, but not replace whole array (i.e. redefine)
+
+==== Ojbects
+
+* keys are also called a property
+
+===== Dot vs Bracket Notation
+

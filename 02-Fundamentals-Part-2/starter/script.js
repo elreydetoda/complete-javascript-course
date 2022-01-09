@@ -207,75 +207,101 @@
 // console.log(percentages)
 
 
-const friends = ['Michael', 'Steven', 'Peter'];
-console.log(friends);
+// const friends = ['Michael', 'Steven', 'Peter'];
+// console.log(friends);
 
-// add elements
-const newLength = friends.push('Jay');
-console.log(friends, newLength);
-friends.unshift('John');
-console.log(friends);
+// // add elements
+// const newLength = friends.push('Jay');
+// console.log(friends, newLength);
+// friends.unshift('John');
+// console.log(friends);
 
-// remove elements
-friends.pop(); // Last
-const popped = friends.pop(); // Last
-console.log(friends, popped);
+// // remove elements
+// friends.pop(); // Last
+// const popped = friends.pop(); // Last
+// console.log(friends, popped);
 
-friends.shift(); // First
-console.log(friends);
+// friends.shift(); // First
+// console.log(friends);
 
 
-console.log(friends.indexOf('Steven'));
-console.log(friends.indexOf('Bob'));
+// console.log(friends.indexOf('Steven'));
+// console.log(friends.indexOf('Bob'));
 
-// ES6 - STRICT EQUALITY
-console.log(friends.includes('Steven'));
-console.log(friends.includes('Bob'));
-friends.push(23);
-console.log(friends.includes('23'));
-console.log(friends.includes(23));
+// // ES6 - STRICT EQUALITY
+// console.log(friends.includes('Steven'));
+// console.log(friends.includes('Bob'));
+// friends.push(23);
+// console.log(friends.includes('23'));
+// console.log(friends.includes(23));
 
-if (friends.includes('Steven')) {
-  console.log('You have a friend called Steven');
-}
+// if (friends.includes('Steven')) {
+//   console.log('You have a friend called Steven');
+// }
+
+// // ASSIGNMENT
+
+// const neighbours = [ 'Mexico', 'Canada', ];
+// console.log(neighbours);
+// neighbours.push('Utopia');
+// console.log(neighbours);
+// neighbours.pop();
+// console.log(neighbours);
+// // neighbours.push('Germany');
+// if (!neighbours.includes('Germany')) {
+//   console.log('Probably not a central European country :D')
+// }
+// neighbours[neighbours.indexOf('Canada')] = 'New Canada'
+// console.log(neighbours);
+
+// //////////////////////////////////////////////////
+// // Coding Challenge 1
+// function calcTip(bill) {
+//   return bill >= 50 && bill <= 300 ? bill * .15 : bill * .2
+// }
+
+// // const calcTip = bill => bill >= 50 && bill <= 300 ? bill * .15 : bill * .2
+
+// console.log(calcTip(100));
+// console.log(calcTip(300));
+// const bills = [ 125, 555, 44 ];
+// console.log(bills);
+// const tips = [
+//   calcTip(bills[0]),
+//   calcTip(bills[1]),
+//   calcTip(bills[2]),
+// ];
+// console.log(tips);
+// const totals = [
+//   bills[0] + tips[0],
+//   bills[1] + tips[1],
+//   bills[2] + tips[2],
+// ];
+// console.log(totals);
+// //////////////////////////////////////////////////
+
+const jonasArray = [
+  'Jonas',
+  'Schmedtmann',
+  'teacher',
+  ['Michael', 'Peter', 'Steven']
+];
+
+const jonas = {
+  firstName: 'Jonas',
+  lastName: 'Schmedtmann',
+  age: 2037 - 1991,
+  job: 'teacher',
+  friends: ['Michael', 'Peter', 'Steven'],
+};
+console.log(jonas);
 
 // ASSIGNMENT
-
-const neighbours = [ 'Mexico', 'Canada', ];
-console.log(neighbours);
-neighbours.push('Utopia');
-console.log(neighbours);
-neighbours.pop();
-console.log(neighbours);
-// neighbours.push('Germany');
-if (!neighbours.includes('Germany')) {
-  console.log('Probably not a central European country :D')
-}
-neighbours[neighbours.indexOf('Canada')] = 'New Canada'
-console.log(neighbours);
-
-//////////////////////////////////////////////////
-// Coding Challenge 1
-function calcTip(bill) {
-  return bill >= 50 && bill <= 300 ? bill * .15 : bill * .2
-}
-
-// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * .15 : bill * .2
-
-console.log(calcTip(100));
-console.log(calcTip(300));
-const bills = [ 125, 555, 44 ];
-console.log(bills);
-const tips = [
-  calcTip(bills[0]),
-  calcTip(bills[1]),
-  calcTip(bills[2]),
-];
-console.log(tips);
-const totals = [
-  bills[0] + tips[0],
-  bills[1] + tips[1],
-  bills[2] + tips[2],
-];
-console.log(totals);
-//////////////////////////////////////////////////
+const myCountry = {
+  country: 'USA',
+  capital: 'Washington DC',
+  language: 'en',
+  population: 3441000000,
+  neighbours: [ 'Mexico', 'Canada', ],
+};
+console.log(myCountry);
