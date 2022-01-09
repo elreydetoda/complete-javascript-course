@@ -379,3 +379,27 @@ const jonas = {
 
 // challenge
 console.log(jonas.getSummary())
+
+// ASSIGNMENT
+
+const myCountry = {
+  country: 'USA',
+  capital: 'Washington DC',
+  language: 'english',
+  population: 3441000000,
+  neighbours: [ 'Mexico', 'Canada', ],
+  describe: function () {
+    return `${this.country} has ${this.population} ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a captial called ${this.capital}.`
+  },
+  checkIsland: function () {
+    this.isIsland = this.neighbours.length > 1 ? true : false
+    return this.isIsland
+  }
+};
+console.log(myCountry.describe());
+console.log(myCountry.checkIsland())
+console.log(myCountry.isIsland)
+myCountry.neighbours.pop()
+myCountry.neighbours.pop()
+console.log(myCountry.checkIsland())
+console.log(myCountry.isIsland)
