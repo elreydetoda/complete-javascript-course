@@ -36,9 +36,9 @@
 // console.log(appleOrangeJuice);
 
 // ASSIGNMENT
-console.log(describeCountry('Finland', '6 million', 'Helsinki'))
-console.log(describeCountry('US', '3 billion', 'Washington DC'))
-console.log(describeCountry('Mexico', '2 million', 'Mexico City'))
+// console.log(describeCountry('Finland', '6 million', 'Helsinki'))
+// console.log(describeCountry('US', '3 billion', 'Washington DC'))
+// console.log(describeCountry('Mexico', '2 million', 'Mexico City'))
 
 // // function declaration
 // function calcAge1(birthYear) {
@@ -54,17 +54,30 @@ console.log(describeCountry('Mexico', '2 million', 'Mexico City'))
 
 // console.log(age1, age2);
 
-function describeCountry(country, population, capitalCity) {
-  return `${country} has ${population} people and its capital city is ${capitalCity}`
+// function describeCountry(country, population, capitalCity) {
+//   return `${country} has ${population} people and its capital city is ${capitalCity}`
+// }
+
+// // ASSIGNMENT
+// function percentagOfWorld1(population){
+//   return `${(population/7900000000)*100}%`
+// }
+// const percentagOfWorld2 = function (population){
+//   return `${(population/7900000000)*100}%`
+// }
+
+// console.log(percentagOfWorld1(1441000000))
+// console.log(percentagOfWorld2(1441000000))
+
+// Arrow function
+const calcAge3 = birthYear => 2037 - birthYear;
+
+console.log(calcAge3(1991));
+
+const yearsUntilRetirement = (birthYear) => {
+  const age = 2037 - birthYear;
+  const retirement = 65 - age;
+  return retirement;
 }
 
-// ASSIGNMENT
-function percentagOfWorld1(population){
-  return `${(population/7900000000)*100}%`
-}
-const percentagOfWorld2 = function (population){
-  return `${(population/7900000000)*100}%`
-}
-
-console.log(percentagOfWorld1(1441000000))
-console.log(percentagOfWorld2(1441000000))
+console.log(yearsUntilRetirement(1991));
